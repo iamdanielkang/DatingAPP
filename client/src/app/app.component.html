@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+
+
+<!-- When we are looping over content in angular, we can use
+     structural directives. They are something that modifies 
+     the DOM in our HTML in some way. LI's don't exist without
+     users, so, they don't form part of the DOM until this is
+     executed. -->
+<ul>
+  <li *ngFor='let user of users'>{{user.id}} - {{user.userName}} </li>
+</ul>
